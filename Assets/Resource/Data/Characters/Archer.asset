@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8fd830c5964554ea1fcfa28169829f, type: 3}
+  m_Name: Archer
+  m_EditorClassIdentifier: 
+  Name: Archer
+  Avatar: {fileID: 7857034630884573844, guid: 8c66e55363a5faf488240a92a4fd0043, type: 3}
+  MovementSpeed: 4
+  Animation: {fileID: 9100000, guid: 61e7738f6dc553c4bae522dd1078a440, type: 2}
+  AttackAnimationLength: 0.9
+  ResurrectAnimationLength: 0.7
+  SettingsMovement:
+    Speed: 4
+    AccelerationTimeAirborne: 0.1
+    AccelerationTimeGrounded: 0.1
+    CanFallThroughOneWayPlatforms: 0
+  SettingsOnLadder:
+    SnapToRestrictedArea: 0
+    ExitLadderOnGround: 1
+    OnLadderSpeed: 4
+    LockFacingToRight: 1
+  SettingsJump:
+    CanJump: 1
+    HasVariableJumpHeight: 1
+    AirJumpAllowed: 1
+    MaxHeight: 1.74
+    MinHeight: 0.81
+    TimeToApex: 0.4816
+    OnLadderJumpForce: 0.4
+    FallingJumpPaddingTime: 0.09
+    WillJumpPaddingTime: 0.15
+  SettingsWallInteraction:
+    CanWallSlide: 0
+    WallStickTime: 0.15
+    WallStickTimer: 0
+    WallSlideSpeedLoss: 0.05
+    WallSlidingSpeedMax: 2
+    CanWallClimb: 0
+    WallClimbSpeed: 2
+    CanWallJump: 0
+    ClimbForce: {x: 12, y: 16}
+    OffForce: {x: 8, y: 15}
+    LeapForce: {x: 18, y: 17}
+    CanGrabLedge: 0
+    LedgeDetectionOffset: 0.1
+    WallDirX: 0
+  SettingsDash:
+    Module: {fileID: 0}
+  SettingsCustomAction:
+    Module: {fileID: 0}
+  CanCrouch: 0
+  DevDescription: 'Archer
+
+
+    Jump: 3 blocks total (1.5 blocks each time)
+
+    #
+    of jumps: 2'

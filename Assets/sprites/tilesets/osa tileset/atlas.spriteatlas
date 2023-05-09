@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 3ed1b785785a8a54aa035ded19853df1, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 203289182, guid: 3ed1b785785a8a54aa035ded19853df1, type: 3}
+  - {fileID: 1202099259, guid: 3ed1b785785a8a54aa035ded19853df1, type: 3}
+  - {fileID: -643827082, guid: 3ed1b785785a8a54aa035ded19853df1, type: 3}
+  - {fileID: -1184082417, guid: 3ed1b785785a8a54aa035ded19853df1, type: 3}
+  - {fileID: 1491788817, guid: 3ed1b785785a8a54aa035ded19853df1, type: 3}
+  - {fileID: 1647986196, guid: 3ed1b785785a8a54aa035ded19853df1, type: 3}
+  - {fileID: 473773704, guid: 3ed1b785785a8a54aa035ded19853df1, type: 3}
+  - {fileID: 1951807139, guid: 3ed1b785785a8a54aa035ded19853df1, type: 3}
+  - {fileID: 1432410400, guid: 3ed1b785785a8a54aa035ded19853df1, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - tile set osa _8
+  - tile set osa _1
+  - tile set osa _0
+  - tile set osa _3
+  - tile set osa _2
+  - tile set osa _5
+  - tile set osa _4
+  - tile set osa _7
+  - tile set osa _6
+  m_RenderDataMap: {}
+  m_Tag: atlas
+  m_IsVariant: 0

@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aa04efab1ef03b48afc54cf426e9c45, type: 3}
+  m_Name: Game Manager
+  m_EditorClassIdentifier: 
+  MinPlayers: 2
+  MaxPlayers: 4
+  TimeUntilGameStarts: 5
+  AvailableCharacters:
+  - {fileID: 11400000, guid: fa96ab613b73a4e498d206742e9264b0, type: 2}
+  - {fileID: 11400000, guid: dce7171f6a7cc4e4191a176a332c747a, type: 2}
+  - {fileID: 11400000, guid: 20eeb38a440b1d449a8cd208198c241c, type: 2}
+  - {fileID: 11400000, guid: 35bd08c8d71a9144fa0b677ceb22b573, type: 2}
+  AvailableColors:
+  - {fileID: 11400000, guid: b877f39362cce984a9e2dee299fde44a, type: 2}
+  - {fileID: 11400000, guid: 9026f5fd71cb07643bf4f72385f416bb, type: 2}
+  - {fileID: 11400000, guid: d4ff357c44e40b6419c37f8aefb17986, type: 2}
+  - {fileID: 11400000, guid: aa177b30821d16b4b9b248673d072c6b, type: 2}
+  eventPlayerReady: {fileID: 11400000, guid: 5df80b53450e9504296236f67d98101b, type: 2}
+  eventPlayerUnready: {fileID: 11400000, guid: a097a8178ce18d3459a0e09e5bf4568a, type: 2}
+  onEventHostPlayerJoined: {fileID: 11400000, guid: 57704805a5cbd4c4d93170556b2f3546,
+    type: 2}
+  onEventPlayerJoined: {fileID: 11400000, guid: 1cce94a4273aef047a1788b2a5b3de3b,
+    type: 2}
+  onEventPlayerLeft: {fileID: 11400000, guid: 9f93f19fbc4a35a49b6fd1139067310d, type: 2}
+  onEventAllPlayersReady: {fileID: 11400000, guid: bf7daa33c2765c842af9bdcf0134dcb1,
+    type: 2}
+  onEventPlayersAreNotReady: {fileID: 11400000, guid: f5e85da75b46d3a40a1cf2b2b740eb3c,
+    type: 2}
+  onEventCharacterAndColorSelected: {fileID: 11400000, guid: accaecca7cd47c94a984b538f0827233,
+    type: 2}
+  GameIsStarted: 0
+  GameIsPaused: 0
+  GameIsInLocalMultiplayerMenu: 0
+  timeBeforeStarting: 0
+  MainCamera: {fileID: 0}
+  StartingSpawnPoints: []
+  OnBack:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLoadMainMenu:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLoadNextLevel:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGameStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLevelChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGamePaused:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGameOver:
+    m_PersistentCalls:
+      m_Calls: []

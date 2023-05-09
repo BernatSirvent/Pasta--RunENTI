@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/scenes menu/intro.unity
+    guid: 739bb394a9c8df944a4b535ae0fcdfa1
+  - enabled: 1
+    path: Assets/Scenes/scenes menu/menu.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/scenes gameplay/Gym.unity
+    guid: a832a41ca9f8d614c84593a9e6e636cb
+  - enabled: 1
+    path: Assets/Scenes/scenes gameplay/MapaInicio.unity
+    guid: e52e920c439003342a32dda9daec8291
+  - enabled: 1
+    path: Assets/Scenes/scenes gameplay/Map1.unity
+    guid: a254a04b1e04b3b498c178ccdf827f5b
+  - enabled: 1
+    path: Assets/Scenes/scenes gameplay/Map2.unity
+    guid: 8da80143eddafa546ab8398dd9a48f7d
+  - enabled: 1
+    path: Assets/Scenes/scenes gameplay/Map3.unity
+    guid: b094a91e0f2009a4d8f48d783d6a9b9d
+  - enabled: 1
+    path: Assets/Scenes/scenes gameplay/Map4.unity
+    guid: b35e0e33a628fd44abb591b433ceb0a1
+  - enabled: 1
+    path: Assets/Scenes/scenes gameplay/FINALWINNER.unity
+    guid: 246eb9f47621f8b4286fe6a0e74bfb24
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 460ff306cb83b2c4fbbc006674522cb2, type: 2}
