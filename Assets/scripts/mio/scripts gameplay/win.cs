@@ -20,13 +20,32 @@ public class win : MonoBehaviour
     public GameObject muertelastwinner;
     public muertedetector deathdetector;
     public winnerdetector Winnerdetector;
+    Scene m_Scene;
+    public string sceneName;
 
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
         winpositionchanger = 0;
     }
+    public void Update()
+    {
 
+        m_Scene = SceneManager.GetActiveScene();
+        sceneName = m_Scene.name;
+
+        if (this != null)
+        {
+            if (sceneName == "Map4")
+            {
+                this.gameObject.SetActive(false);
+            }
+            else
+            {
+                this.gameObject.SetActive(true);
+            }
+        }
+    }
     public void NextRoundByDeath()
     {
         

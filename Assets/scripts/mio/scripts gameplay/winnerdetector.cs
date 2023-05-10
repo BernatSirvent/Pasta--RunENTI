@@ -180,11 +180,19 @@ public class winnerdetector : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        IsitTIE();
+        transicion.Play("trans");
+        Invoke("Changescene", 0.76f);
 
+    }
+
+    public void Changescene()
+    {
         IsitTIE();
 
         if (tie == true)
         {
+            IsitTIE();
             Tie();
         }
         else
@@ -192,4 +200,6 @@ public class winnerdetector : MonoBehaviour
             changeToFinal();
         }
     }
+
+
 }
