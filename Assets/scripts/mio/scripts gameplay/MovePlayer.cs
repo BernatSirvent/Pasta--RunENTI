@@ -8,6 +8,7 @@ public class MovePlayer : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
     public cameracontrol shakecam;
+    public pausemenu Pausemenu;
     public ParticleSystem dust;
     public ParticleSystem dust2;
     public GameObject explosion;
@@ -60,6 +61,20 @@ public class MovePlayer : MonoBehaviour
         enSuelo = Physics2D.OverlapCircle(groundCheck.position, 0.3f, groundLayer);
         animator.SetBool("enSuelo", enSuelo);
 
+    }
+
+    public void Pause(InputAction.CallbackContext context)
+    {
+        {
+            if (Pausemenu.GameIsPaused)
+            {
+                Pausemenu.Resume();
+            }
+            else
+            {
+                Pausemenu.Pause();
+            }
+        }
     }
 
     public void Jump(InputAction.CallbackContext context)

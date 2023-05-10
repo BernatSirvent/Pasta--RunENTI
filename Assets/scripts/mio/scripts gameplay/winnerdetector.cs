@@ -24,6 +24,7 @@ public class winnerdetector : MonoBehaviour
     public GameObject p3GO;
     public GameObject p4GO;
 
+
     public GameObject muertelastwinner;
     public GameObject winnerdetector2;
     public GameObject Pausemenu;
@@ -45,11 +46,13 @@ public class winnerdetector : MonoBehaviour
     public void Start()
     {
         tie = false;
+
     }
 
     private void Awake()
     {
         DontDestroyOnLoad(this);
+
     }
 
     public void Tie()
@@ -178,7 +181,7 @@ public class winnerdetector : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision)
     {
 
-        IsitTIE(); 
+        IsitTIE();
 
         if (tie == true)
         {
@@ -186,11 +189,7 @@ public class winnerdetector : MonoBehaviour
         }
         else
         {
-            if (tie != true)
-            {
-                changeToFinal();
-            }
-
+            changeToFinal();
         }
     }
 }

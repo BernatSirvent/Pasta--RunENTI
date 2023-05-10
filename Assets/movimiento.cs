@@ -53,6 +53,15 @@ public partial class @Movimiento: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""76e629c0-e996-450b-903f-8a172de64694"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -163,6 +172,28 @@ public partial class @Movimiento: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
                     ""action"": ""Select"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6c547c8a-3128-49d0-b448-07f04949c0b0"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""960a348e-7d23-40b3-9c7d-4e2b0d233424"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -344,6 +375,7 @@ public partial class @Movimiento: IInputActionCollection2, IDisposable
         m_Player_Movimiento = m_Player.FindAction("Movimiento", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_Select = m_Player.FindAction("Select", throwIfNotFound: true);
+        m_Player_Pause = m_Player.FindAction("Pause", throwIfNotFound: true);
         // UIMovement
         m_UIMovement = asset.FindActionMap("UIMovement", throwIfNotFound: true);
         m_UIMovement_ChangeSelectionInput = m_UIMovement.FindAction("ChangeSelectionInput", throwIfNotFound: true);
@@ -413,6 +445,7 @@ public partial class @Movimiento: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Movimiento;
     private readonly InputAction m_Player_Jump;
     private readonly InputAction m_Player_Select;
+    private readonly InputAction m_Player_Pause;
     public struct PlayerActions
     {
         private @Movimiento m_Wrapper;
@@ -420,6 +453,7 @@ public partial class @Movimiento: IInputActionCollection2, IDisposable
         public InputAction @Movimiento => m_Wrapper.m_Player_Movimiento;
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputAction @Select => m_Wrapper.m_Player_Select;
+        public InputAction @Pause => m_Wrapper.m_Player_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -438,6 +472,9 @@ public partial class @Movimiento: IInputActionCollection2, IDisposable
             @Select.started += instance.OnSelect;
             @Select.performed += instance.OnSelect;
             @Select.canceled += instance.OnSelect;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -451,6 +488,9 @@ public partial class @Movimiento: IInputActionCollection2, IDisposable
             @Select.started -= instance.OnSelect;
             @Select.performed -= instance.OnSelect;
             @Select.canceled -= instance.OnSelect;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -553,6 +593,7 @@ public partial class @Movimiento: IInputActionCollection2, IDisposable
         void OnMovimiento(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnSelect(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
     public interface IUIMovementActions
     {
